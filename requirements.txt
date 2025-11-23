@@ -1,0 +1,22 @@
+APEX-FUZZER - Complete Installation & Usage Guide
+Installation Commands:
+bash
+pip install requests colorama
+Usage Examples:
+Basic scan:
+
+bash
+python apex-fuzzer.py http://example.com/api
+Advanced scan with all options:
+
+bash
+python apex-fuzzer.py http://example.com/api --wordlist ./wordlist.txt --rate-limit 10 --headers '{"Content-Type": "application/json"}' --timeout 5 --output results.txt
+Quick save results:
+
+bash
+python apex-fuzzer.py http://example.com/api -o
+Full featured scan:
+
+bash
+python apex-fuzzer.py http://target.com/api --wordlist wordlist.txt --rate-limit 5 --headers '{"User-Agent": "APEX-FUZZER", "Authorization": "Bearer token"}' --timeout 10 --output scan_results.txt
+Developer: Osama Eid | Tool: APEX-FUZZER v1.0
